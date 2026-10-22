@@ -24,17 +24,17 @@
 
 //　プロパティのオプション
 // 型エイリアスで宣言したプロパティの最後に?をつけることで、プロパティをオプションにできる
-// type Staff = {
-// 	firstName: string;
-// 	lastName: string;
-// 	jobTitle?: string
-// };
+type Staff = {
+	firstName: string;
+	lastName: string;
+	jobTitle?: string
+};
 
-// const staff: Staff = {firstName: "AWS", lastName: "太郎", jobTitle: "インフラエンジニア"};
-// const boss: Staff = {firstName: "Amazon", lastName: "二郎"};
+const staff: Staff = {firstName: "AWS", lastName: "太郎", jobTitle: "インフラエンジニア"};
+const boss: Staff = {firstName: "Amazon", lastName: "二郎"};
 
 
-// console.log(`${staff.firstName} ${staff.lastName}の役職は${staff.jobTitle}で、${boss.firstName} ${boss.lastName}です。`)
+console.log(`${staff.firstName} ${staff.lastName}の役職は${staff.jobTitle}で、${boss.firstName} ${boss.lastName}です。`)
 
 //　＜発展＞typeとinterfaceの違い
 // interfaceではメソッドが定義できる
